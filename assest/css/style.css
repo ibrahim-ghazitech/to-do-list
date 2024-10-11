@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 18px;
+}
+html, 
+body {
+    width: 100%;
+    height: 100%;
+}
+section.main {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    background: linear-gradient(172deg, rgb(100 176 120) 0%, rgba(86, 168, 170, 1) 100%);
+}
+#main-wrapper{
+    justify-content: center;
+}
+#content {
+    margin-top: 5vh;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 40px;
+}
+#main-icon img {
+    max-width: 100%;
+    width: 40px;
+}
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input#to-do-name {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+button#btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    background: linear-gradient(172deg, rgb(100 176 120) 0%, rgba(86, 168, 170, 1) 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+h4#main-heading {
+    margin-bottom: 30px;
+}
+ul#list-wrapper {
+    margin-top: 30px;
+}
+input#to-do-name:focus {
+    border: none;
+    outline: none;
+}
+ul li {
+    list-style: none;
+    padding: 10px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url('../images/check.png');
+    background-size: cover;
+    top: 13px;
+    left: -22px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url('../images/success.png');
+    background-blend-mode: color;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+#credits{
+    margin-top: 10px;
+    text-align: center;
+}
+
